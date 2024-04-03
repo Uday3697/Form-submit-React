@@ -20,7 +20,7 @@ const UserForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/submit-form', formData, {
+            const response = await axios.post('https://form-backend-9wqe.onrender.com/submit-form', formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
